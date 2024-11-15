@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container-fluid {
+    margin-top: 140px;
+}
+
+.title-contain {
+    height: 50px;
+}
+
+.title-contain label {
+    color: white;
+    font-size: 20px;
+}
+
+.square {
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+}
+
+.lb-donGia {
+    margin-left: 450px;
+}
+
+.lb-soLuong {
+    margin-left: 100px;
+}
+
+.lb-soTien {
+    margin-left: 100px;
+}
+
+.lb-thaoTac {
+    margin-left: 100px;
+}
+
+/* Từng sản phẩm */
+.product {
+    height: 120px;
+}
+
+.img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
+}
+
+.name {
+    width: 200px;
+    color: white;
+}
+
+.phanLoaiSelect {
+    width: 140px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.donGia {
+    margin-left: 40px;
+}
+
+.amountCo {
+    width: 100px;
+    height: 26px;
+    margin-left: 80px;
+}
+
+.amountCo input {
+    width: 40px;
+}
+
+.amountCo img {
+    height: 20px;
+    width: 20px;
+}
+
+.soTien {
+    margin-left: 80px;
+}
+
+.delete {
+    margin-left: 100px;
+}
+
+/* Tổng thanh toán */
+.thanhToanContain .txtChonTatCa {
+    margin-left: 20px;
+}
+
+.thanhToanContain .txtXoa {
+    margin-left: 80px;
+}
+
+.thanhToanContain .txtSPHetHang {
+    margin-left: 80px;
+}
+
+.thanhToanContain .txtTongThanhToan {
+    margin-left: 260px;
+    margin-right: 80px;
+}

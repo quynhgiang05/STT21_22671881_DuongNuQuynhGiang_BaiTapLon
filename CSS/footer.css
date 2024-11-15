@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(29, 29, 29);
+    padding: 20px 135px 0;
+}
+
+.row.footer-row {
+    border-bottom: 1px solid #635f55;
+    padding-bottom: 38px;
+}
+
+.footer-title {
+    display: inline-block;
+    padding: 0 48px 20px 0;
+    border-bottom: 1px solid #635f55;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer-col:first-child {
+    margin-top: 35px;
+    position: relative;
+}
+
+.footer-col:nth-child(3) {
+    margin-left: 35px;
+}
+
+.footer-col:last-child {
+    margin-left: 40px;
+}
+
+.footer-col img {
+    display: block;
+}
+
+.footer-col a {
+    color: #d4d2ce;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.86;
+    text-decoration: none;
+}
+
+.footer-col .logo-title {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    bottom: 200px;
+    left: 80px;
+}
+
+.footer-list {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.footer-list li {
+    margin-left: -29px;
+}
+
+.footer-list a {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-list a.footer-social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.copyright {
+    padding: 28px 0;
+    color: #d4d2ce;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.86;
+    text-align: center;
+}
+.toggle-icon {
+    display: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+@media (max-width: 768px) {
+
+    .toggle-icon {
+        display: inline-block;
+        cursor: pointer;
+        float: right;
+    }
+    .footer {
+
+        padding: 20px 15px;
+    }
+    .footer-title{
+        text-align: left;
+        width: 350px;
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 5px;
+    }
+    .footer-col:nth-child(2) {
+        margin-left: 35px; 
+    }
+    .footer-col:nth-child(4) {
+        margin-left: 35px; 
+    }
+    .footer-col:nth-child(1) {
+        display: none; 
+    }
+    
+  
+    .footer-list{
+        display: none;
+    }
+    .footer-list li {
+        margin-left: 0;
+    }
+
+    .copyright {
+        padding: 20px 0;
+    }
+}
+.footer-list.hidden {
+    display: none; /* Ẩn danh sách trên màn hình điện thoại */
+}
+@media (min-width: 769px) {
+    .footer-list.hidden {
+        display: block !important; /* Ẩn danh sách trên máy tính */
+    }
+}

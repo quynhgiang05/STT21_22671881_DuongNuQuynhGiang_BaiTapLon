@@ -1,0 +1,129 @@
+<!-- Author: Thế Bảo
+    Day: 14/04/2024 -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <!-- Boostrap -->
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+        <script src="../JS/bootstrap.bundle.min.js"></script>
+        <!-- JQuery -->
+        <script src="../JS/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="../CSS/formDathang.css">
+        <title>Đặt hàng</title>
+    </head>
+    <header id="headerMenu"></header>
+    <body>
+        <!-- Embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Pets page -->
+        
+        <div class="container d-flex flex-row">
+            <form action="" class="formThongTin w-50 mb-4">
+                <label for=""><h2>THÔNG TIN ĐẶT HÀNG</h2></label>
+                <div class="row">
+                    <div class="col-8 mb-2">
+                        <label for="" class="form-label">Họ và tên:</label>
+                        <input
+                            type="text"
+                            name=""
+                            id="hoten"
+                            class="form-control"
+                            placeholder=""
+                            aria-describedby=""
+                        />
+                    </div>
+                    <div class="col-4 mb-2">
+                        <label for="" class="form-label" id="">Số điện thoại:</label>
+                        <input
+                            type="text"
+                            name=""
+                            id="sdt"
+                            class="form-control"
+                            placeholder=""
+                            aria-describedby="helpId"
+                        />
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <label for="" class="form-label" id="">Địa chỉ:</label>
+                    <input
+                        type="text"
+                        name=""
+                        id="diaChi"
+                        class="form-control"
+                        placeholder=""
+                        aria-describedby="helpId"
+                    />
+                </div>
+                <div class="mb-2">
+                    <label for="" class="form-label" id="">Email:</label>
+                    <input
+                        type="text"
+                        name=""
+                        id="email"
+                        class="form-control"
+                        placeholder=""
+                        aria-describedby="helpId"
+                    />
+                </div>
+                <div class="mb-2">
+                    <label for="" class="form-label">Ghi chú:</label>
+                    <textarea
+                        class="form-control"
+                        name=""
+                        id="ghiChu"
+                        rows="3"
+                    ></textarea>
+                </div>
+                <div class="mb-3 d-flex flex-column">
+                    <label for="" class="form-label">Vui lòng chọn một phương thức thanh toán</label>
+                    <select name="" id="" class="w-50">
+                        <option value="">Ship COD thanh toán khi nhận hàng</option>
+                        <option value="">Thẻ tín dụng/Ghi nợ</option>
+                        <option value="">Apple Pay</option>
+                    </select>
+                </div>
+            </form>
+            <form action="" class="formThongTinDH w-50">
+                <label for=""><h3>Thông tin đơn hàng</h3></label>
+                <div class="cardProduct d-flex flex-row mt-5">
+                    <div class="">
+                        <img src="" alt="" id="img">
+                    </div>
+                    <div class="product ms-3">
+                        <label for="">Tên sản phẩm</label>
+                        <p id="name"></p>
+                    </div>
+                    <div class="amount ms-3">
+                        <label for="">Số lượng</label>
+                        <p class="d-flex justify-content-center" id="amount"></p>
+                    </div>
+                    <div class="price ms-5">
+                        <label for="" class="d-flex justify-content-center">Giá</label>
+                        <p id="price"></p>
+                    </div>
+                </div>
+                <div class="tongTienContain border-top d-flex flex-row justify-content-center">
+                    <label for="" class="txtTongTien mt-3">Tổng tiền:</label>
+                    <p class="mt-3 ms-4" id="total"></p>
+                </div>
+                <div class="d-flex justify-content-center mt-4">
+                    <button class="btn btn-success" id="datHang">Đặt hàng</button>
+                </div>
+            </form>
+        </div>
+        <label for="" class="backToCart w-100 d-flex justify-content-center"><a class="text-danger" href="cart.html">TRỞ VỀ GIỎ HÀNG</a></label>
+    </body>
+        <footer id="footerMenu"></footer>
+        <script src="../JS/TONGHOPTRANG/HeaderFooter.js"></script>
+        <script src="../JS/formDatHang.js"></script>
+    </html>

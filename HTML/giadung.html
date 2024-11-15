@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../CSS/trangchu.css">
+    <link rel="stylesheet" href="../Boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <script src="../JS/addcart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GIA DỤNG ĐIỆN</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../Favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+       
+.items-combo{
+    margin-right: 18px;
+    color: black;
+    transition: all 0.3 linear;
+
+}
+
+.items-combo:hover{
+    transform: scale(1.2);
+}
+.items-acti{
+    background-color: rgb(2, 41, 66);
+    color: white;
+    border-radius: 5px;
+    transform: none !important;
+}
+.add-cart{
+    opacity: 0%;
+    transition: all 0.3s;
+}
+.card:hover .add-cart{
+    opacity: 100%;
+}
+.card{
+    height: 400px !important;
+}
+.card img{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+
+    transition: all 0.3s;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+.product{
+    display: block;
+}
+.product-codien,.product-hiendai,.product-sangtrong{
+    display: none;
+}
+.card-body{
+   position: relative;
+   z-index: 100; 
+}
+.heading {
+    position: relative;
+  }
+  .heading::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-color: black;
+    width: 100px;
+    height: 4px;
+    border-radius: 12px;
+    right: 160px;
+    bottom: 20px;
+  }
+@media(min-width:769px){
+     .content-8 .row .col-md{
+         margin: 0 15px;
+                
+        }
+        }
+
+      </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-sm px-5 fixed-top pb-0">
+            <div class="container">
+                <a href="./home.html">
+                    <img
+                        src="../IMG/Logo/Home & More.jpg" 
+                        alt=""
+                        class="logo-img"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#idNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="idNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../HTML/home.html" class="nav-link"
+                                >GIỚI THIỆU</a
+                            >
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                href=""
+                                class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                >DỊCH VỤ</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="../HTML/baohanh.html" class="nav-link"
+                                        >BẢO HÀNH - SỬA CHỮA</a
+                                    >
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="../HTML/tuvan.html" class="nav-link"
+                                        >TƯ VẤN KHÁCH HÀNG</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                href=""
+                                class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                            >
+                                SẢN PHẨM
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="../HTML/products.html" class="nav-link"
+                                        >MÁY GIẶT</a
+                                    >
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="../HTML/tulanh.html" class="nav-link"
+                                        >TỦ LẠNH</a
+                                    >
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="../HTML/giadung.html" class="nav-link"
+                                        >GIA DỤNG ĐIỆN</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                href=""
+                                class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                >TIN TỨC</a
+                            >
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="../HTML/meovat.html" class="nav-link"
+                                        >MẸO VẶT CUỘC SỐNG</a
+                                    >
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="../HTML/xhuongtintuc.html" class="nav-link"
+                                        >XU HƯỚNG</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="../HTML/lienhe.html" class="nav-link">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                    <div class="input-group search">
+                        <span
+                            class="input-group-text bg-white border-black"
+                            style="
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                                border-right: none;
+                            "
+                            ><img src="../IMG/Logo/Union.png" alt=""
+                        /></span>
+                        <input
+                            class="form-control border-black"
+                            type="text"
+                            name=""
+                            id=""
+                            style="
+                                margin-right: 60px;
+                                border-left: none;
+                                border-top-right-radius: 20px;
+                                border-bottom-right-radius: 20px;
+                                outline: none;
+                                box-shadow: none;
+                            "
+                            placeholder="Tìm kiếm..."
+                        />
+                    </div>
+                    <div class="header-action">
+                        <a href="./cart.html"
+                            ><img
+                                src="../IMG/Logo/Logo-cart.png"
+                                alt=""
+                                class="cart-icon"
+                        /></a>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#formModal"
+                        ><img
+                            src="../IMG/Logo/logo-user.png"
+                            alt=""
+                            class="account-icon"
+                    /></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade modal-lg" id="formModal">
+            <div class="modal-dialog">
+              <div class="modal-content bg-transparent border-0 ">
+                <div class="modal-header border-0">
+                 
+                </div>
+                <div class="modal-body ">
+                  <div class="container-sign" id="container">
+                    <div class="form-container sign-up">
+                        <form >
+                            <h1>Tạo tài khoản</h1>
+                            <div class="social-icons">
+                                <a href="#" class="icon"><img src="../IMG/Logo/icons8-google-30.png" alt=""></a>
+                                <a href="#" class="icon"><img src="../IMG/Logo/icons8-facebook-30.png" alt=""></a>
+                                <a href="#" class="icon"><img src="../IMG/Logo/icons8-github-30.png" alt=""></a>
+                            </div>
+                            <span>Hoặc sử dụng email của bạn để đăng ký</span>
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button>Đăng kí</button>
+                        </form>
+                    </div>
+                    <div class="form-container sign-in">
+                        <form >
+                            <h1>Đăng nhập</h1>
+                            <div class="social-icons">
+                                <a href="#" class="icon"><img src="../IMG/Logo/icons8-google-30.png"
+                                        alt=""></a>
+                                <a href="#" class="icon"><img src="../IMG/Logo/icons8-facebook-30.png"
+                                        alt=""></a>
+                                <a href="#" class="icon"><img src="../IMG/Logo/icons8-github-30.png"
+                                        alt=""></a>
+                            </div>
+                            <span>Hoặc sử dụng mật khẩu email của bạn</span>
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <a href="#">Quên mật khẩu</a>
+                            <button>Đăng nhập</button>
+                        </form>
+                    </div>
+                    <div class="toggle-container">
+                        <div class="toggle">
+                            <div class="toggle-panel toggle-left">
+                                <h1>Chào mừng bạn trở lại!</h1>
+                                <p>Nhập thông tin cá nhân của bạn để sử dụng tất cả các tính năng của trang web</p>
+                                <button class="hidden" id="login">Đăng nhập</button>
+                            </div>
+                            <div class="toggle-panel toggle-right">
+                                <h1>Chào bạn!</h1>
+                                <p>Đăng ký với thông tin cá nhân của bạn để sử dụng tất cả các tính năng của trang web</p>
+                                <button class="hidden" id="register">Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal-footer border-0">
+                </div>
+              </div>
+            </div>
+        </div> 
+    </header>
+     <!-- product -->
+     <div class="container products">
+        <div class="title d-flex justify-content-center align-items-center ">
+           <h1 class="p-5 heading fw-normal">GIA DỤNG ĐIỆN</h1>
+        </div>
+        <nav class="nav justify-content-center ms-4 mt-2 mb-5 flex-" id="menu-tu-giuong">
+           <span class="items-combo px-3 py-2">TẤT CẢ</span>
+           <span class="items-combo px-3 py-2">MÁY XAY SINH TỐ</span>
+           <span class="items-combo px-3 py-2">ẤM SIÊU TỐC</span>
+           <span class="items-combo px-3 py-2">NỒI CHIÊN KHÔNG DẦU</span>
+        </nav>
+        <div class="product">
+           <!-- row 1 -->
+           <div class="row justify-content-center align-items-center gx-5 mb-5">
+              <div class="col">
+                 <div class="card text-start rounded-12 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/1.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark
+
+                    ">
+                       <h4 class="card-title text-white ">Nồi Chiên Không Dầu Điện Tử </h4>
+                       <p class="card-text d-inline-block text-white ">670.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/2.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Nồi Chiên Không Dầu Tefal </h4>
+                       <p class="card-text d-inline-block text-white "> 990.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/3.png" alt="img" class="card-img-top">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Nồi Chiên Không Dầu Điện Tử </h4>
+                       <p class="card-text d-inline-block text-white ">897.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+           </div>
+  
+           <!-- row 2 -->
+           <div class="row justify-content-center align-items-center gx-5 mb-5">
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/7.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Bình Siêu Tốc Tefal </h4>
+                       <p class="card-text d-inline-block text-white ">990.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/8.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Bình Siêu Tốc Tefal Smart</h4>
+                       <p class="card-text d-inline-block text-white ">1.000.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/9.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Bình Siêu Tốc Tefal</h4>
+                       <p class="card-text d-inline-block text-white ">1.990.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+           </div>
+  
+           <!-- row 3 -->
+           <div class="row justify-content-center align-items-center gx-5 mb-5">
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/4.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Máy Xay Sinh Tố Tefa</h4>
+                       <p class="card-text d-inline-block text-white ">790.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/5.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Máy Xay Sinh Tố Tefa</h4>
+                       <p class="card-text d-inline-block text-white ">890.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/6.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Máy Xay Sinh Tố Tefa</h4>
+                       <p class="card-text d-inline-block text-white ">990.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+  
+        <div class="product-sangtrong">
+           <div class="row justify-content-center align-items-center gx-5 mb-5">
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/4.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Máy Xay Sinh Tố Tefa</h4>
+                       <p class="card-text d-inline-block text-white ">790.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/5.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Máy Xay Sinh Tố Tefa</h4>
+                       <p class="card-text d-inline-block text-white ">990.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/6.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Máy Xay Sinh Tố Tefa</h4>
+                       <p class="card-text d-inline-block text-white ">990.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="row justify-content-center align-items-center gx-5 mb-5">
+              <div class="col-4">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/4.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Máy Xay Sinh Tố Tefa</h4>
+                       <p class="card-text d-inline-block text-white ">990.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col"></div>
+           </div>
+        </div>
+  
+  
+  
+        <div class="product-hiendai">
+           <div class="row justify-content-center align-items-center gx-5 mb-5">
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/7.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Bình Siêu Tốc Tefal </h4>
+                       <p class="card-text d-inline-block text-white ">990.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/8.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Bình Siêu Tốc Tefal Smart</h4>
+                       <p class="card-text d-inline-block text-white ">1.000.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/9.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Bình Siêu Tốc Tefal</h4>
+                       <p class="card-text d-inline-block text-white ">1.990.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+  
+  
+  
+        <div class="product-codien">
+           <div class="row justify-content-center align-items-center gx-5 mb-5">
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/1.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark
+
+                    ">
+                       <h4 class="card-title text-white ">Nồi Chiên Không Dầu Điện Tử </h4>
+                       <p class="card-text d-inline-block text-white ">670.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col">
+                 <div class="card text-start rounded-4 overflow-hidden">
+                    <img src="../IMG/GIA DUNG DIEN/2.png" alt="img" class="card-img-top ">
+                    <div class="card-body bg-dark">
+                       <h4 class="card-title text-white ">Nồi Chiên Không Dầu Tefal </h4>
+                       <p class="card-text d-inline-block text-white "> 990.000 đ</p>
+                       <button type="button" class="btn btn-outline-warning float-end add-cart"><i class="fa fas fas fa-cart-plus"></i></button>
+                    </div>
+                 </div>
+              </div>
+              <div class="col"></div>
+           </div>
+           
+        </div>
+     </div>
+     <section class="features">
+        <div class="container">
+            <h2 class="title">DỊCH VỤ </h2>
+            <p class="features-desc desc-1">
+                HOME&MORE luôn cung cấp cho khách hàng những dịch vụ tốt
+                nhất
+            </p>
+            <div class="row features-list">
+                <div class="col-md-4  features-item">
+                    <a href="../HTML/tuvan.html"><img src="../IMG/Tư vấn/baner.jpg" alt=""
+                            class="features-img img-fluid" /></a>
+                    <div class="features-info"  style="font-size: 20px;">
+                        <h3 class="features-subtitle">
+                            ĐẶT LỊCH TƯ VẤN
+                        </h3>
+                        <p class="features-desc">
+                            Chúng tôi mang đến dịch vụ tư vấn chuyên nghiệp, giúp khách hàng chọn lựa thiết bị gia đình
+                             đáp ứng tốt nhất cho mọi yêu cầu.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4  features-item">
+                    <a href="../HTML/baohanh.html"><img src="../IMG/Tư vấn/bannner.jpg" alt=""
+                            class="features-img img-fluid" /></a>
+                    <div class="features-info">
+                        <h3 class="features-subtitle hotel"  style="font-size: 20px;">
+                            BẢO HÀNH VÀ SỬA CHỮA
+                        </h3>
+                        <p class="features-desc">
+                            Đội ngũ kỹ thuật viên của Home & More sẵn sàng hỗ trợ khách hàng kiểm tra và 
+                            bảo dưỡng thiết bị tại nhà.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4  features-item">
+                    <a href="../HTML/tuvan.html">
+                        <img src="../IMG/Tư vấn/banner.jpg" alt="" class="features-img img-fluid" /></a>
+                    <div class="features-info">
+                        <h3 class="features-subtitle" style="font-size: 20px;">TRẢI NGHIỆM THÔNG MINH</h3>
+                        <p class="features-desc">
+                            Home & More tự hào là đối tác đáng tin cậy, mang đến sự an tâm trong từng lựa chọn của khách hàng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>           
+  <div id="myModal" class="modal fade modal-lg" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <div class="text-center w-100"> <h2 class="modal-title text-center">ĐẶT LỊCH HẸN</h2></div>
+                <button
+                        type="button"
+                        class="close"
+                        data-bs-dismiss="modal"
+                    >
+                        &times;
+                    </button>
+            </div>
+            <div class="modal-body">
+               
+                 <form action="" class="table" >
+              <div class="row">
+                <div class="col">
+                    <label for="">Họ và tên: </label>
+                </div>
+                <div class="col">
+                    <label for="">Email: </label>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Nhập họ và tên"
+                        class="form-control"
+                        style="outline: none; box-shadow: none;"
+                    
+                    />
+                </div>
+                <div class="col">
+                    <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Nhập địa chỉ Email"
+                        class="form-control"
+                        style="outline: none; box-shadow: none;"
+                    />
+                </div>
+            </div>
+            <div class="row mt-2"><label for="">Điện thoại: </label></div>
+            <div class="row mx-0 mt-2">
+                <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Nhập số điện thoại: "
+                    class="form-control"
+                    style="   outline: none;box-shadow: none;"
+                />
+            </div>
+            <div class="row mt-2"><label for="">Nội dung: </label></div>
+            <div class="row mx-0 mt-2">
+                <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Nội dung liên hệ"
+                    class="form-control"
+                    style="   outline: none;box-shadow: none;"
+                ></textarea>
+            </div>
+            <div class="row m-0 mt-4">
+                    <button class="btn btn-dark">GỬI LIÊN HỆ</button></a
+                >
+            </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+  <footer id="footerMenu" class="mt-5"></footer>
+  <script src="../JS/TONGHOPTRANG/HeaderFooter.js"></script>
+  <script src="../JS/formdangki.js"></script>
+  <script src="../JS/jquery-3.7.1.min.js"></script>
+  <script src="Bootstrap/js/bootstrap.bundle.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/fontawesome.min.js" type="text/javascript"></script>
+  <script src="../JS/products.js"></script>
+  <script src="../JS/validate.js"></script>
+  </body>
+</body>
+</html>

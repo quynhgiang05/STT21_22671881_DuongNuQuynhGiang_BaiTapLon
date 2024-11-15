@@ -1,0 +1,80 @@
+<!-- Author: Thế Bảo
+    Day: 18/03/2024 -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <!-- Boostrap -->
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+        <script src="../JS/bootstrap.bundle.min.js"></script>
+        <!-- JQuery -->
+        <script src="../JS/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="../CSS/detailproduct.css">
+        <title>Products</title>
+    </head>
+    <body>
+        <!-- Embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Pets page -->
+        <header id="headerMenu"></header>
+        <div class="container">
+            <div class="container-fluid">
+                <div class="body-pets row">
+                    <div class="product">
+                        <div class="">
+                            <div class="connect-page"><a href="../HTML/products.html">Sản phẩm</a> > <a href="">Chi tiết sản phẩm</a></div>
+                            <div class="productsView">
+                                <img id="img" src="" alt="">
+                            </div>
+                        </div>
+                        <div class="productInfo">
+                            <div class="productsName" id="name"></div>
+                            <div class="brand">Thương hiệu: <label for="" id="brand"></label></div>
+                            <div class="rating mt-4">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div>(135 đánh giá của khách hàng)</div>
+                            <div class="state-contain mt-3">Tình trạng: <label for="" class="state" id="state"></label></div>
+                            <div class="price mt-3"><label for="">Giá bán:</label><h2 id="price"></h2></div>
+                            <div class="border-top">
+                                <label for="" class="mb-2">Trọng lượng</label>
+                                <div class="weight-product">
+                                    <div class="weight-option border border-black" id="option1">400 (gr)</div>
+                                    <div class="weight-option border border-black" id="option2">1 (kg)</div>
+                                    <div class="weight-option border border-black" id="option3">2 (kg)</div>
+                                    <div class="weight-option border border-black" id="option4">10 (kg)</div>
+                                </div>
+                            </div>
+                            <div class="amount-contain mt-4">
+                                <label for="">Số lượng</label>
+                                <div class="amountCo">
+                                    <img src="../Images/Logo/remove.png" alt="" id="removeAmount">
+                                    <input type="text" value="0" id="amountNum">
+                                    <img src="../Images/Logo/add.png" alt="" id="addAmount">
+                                </div>
+                            </div>
+                            <div class="productsButton mt-4">
+                                <button class="btn btn-success me-4" id="datMuaNgay">Đặt mua ngay</button>
+                                <button class="btn btn-danger">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>                 
+                </div>
+            </div>
+        </div>
+        <footer id="footerMenu"></footer>
+        <script src="../JS/TONGHOPTRANG/HeaderFooter.js"></script>
+        <script src="../JS/detailproduct.js"></script>
+    </body>
+    </html>

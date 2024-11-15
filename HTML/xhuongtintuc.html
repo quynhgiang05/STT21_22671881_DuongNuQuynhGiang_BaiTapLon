@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TIN TỨC</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../Favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../Favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../Favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../Favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../Favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../Favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../Favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../Favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../Favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../Favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../Favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Embed font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="../Boostrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="../CSS/navbar.css">
+        <link rel="stylesheet" href="../CSS/home.css" />
+        <link rel="stylesheet" href="../CSS/form.css">
+
+        <link
+            rel="stylesheet"
+            href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <script src="../JS/bootstrap.bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            .carousel-control-prev,
+            .carousel-control-next {
+            display: block !important;
+        }
+        /* section */
+.a {
+    height: 150px;
+    width: 100%;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.card {
+    width: 400px;
+    height: 600px;
+    background: #f5f5f5;
+    padding: 2rem 1.5rem;
+    transition: box-shadow .3s ease, transform .2s ease;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+/*Image*/
+.card-avatar {
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    /* background: linear-gradient(to top, #f1e1c1 0%, #aa9487 100%); */
+    /* width: var(--size);
+    height: var(--size); */
+    border-radius: 50%;
+    transition: transform .2s ease;
+    /* margin-bottom: 1rem; */
+    
+}
+
+.card-avatar img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    /* margin-top: -10px; */
+    /* transform: translate(-20%,-10%); */
+    padding-bottom: 10px;
+    /* border: 1px solid black; */
+
+
+}
+
+/*Card footer*/
+.card-social {
+    transform: translateY(200%);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    opacity: 0;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+
+
+
+.card-social__item  {
+    display: block;
+    height: 20px;
+    width: 20px;
+    fill: #515F65;
+    cursor: pointer;
+    transition: fill 0.2s ease, transform 0.2s ease;
+    margin-bottom: -10px;
+    list-style: none;
+  
+
+}
+.fa-solid{
+    margin-left: -15px;
+
+}
+
+
+
+
+/*Text*/
+.card-title {
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.card-subtitle {
+    color: #859ba8;
+    font-size: 0.8em;
+}
+
+/*Hover*/
+.card:hover {
+    box-shadow: 0 8px 20px #23232333;
+}
+
+.card:hover .card-info {
+    transform: translateY(-5%);
+}
+
+.card:hover .card-social {
+    transform: translateY(100%);
+    opacity: 1;
+}
+
+.card-social__item svg:hover {
+    fill: #232323;
+    transform: scale(1.1);
+}
+
+.card-avatar:hover {
+    transform: scale(1.1);
+}
+
+
+.dk1 {
+    margin-left: 25%;
+}
+
+.dk2 {
+    margin-right: 25%;
+}
+
+
+.time {
+    background-image: url(../IMG/c2.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    position: relative;
+
+
+}
+#clockdiv{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    border-radius: 10px;
+
+
+}
+
+.items{
+    
+    height: 100px;
+    width: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+
+
+}
+.items span{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 12px;   
+    text-align: center;
+}
+.a1{
+    width: 50px;
+    height: 100px;
+    opacity: 0.2;
+    transition: 0.5s;
+}
+.a1:hover{
+    opacity: 1;
+}
+.a2{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+   
+}
+
+.week{
+    color: rgb(75, 67, 67);
+    text-decoration: none;
+
+}
+
+
+.navbar-nav li .dropdown-menu{
+    position: absolute;
+    /* display:block; */
+    top: 100%;
+    right: 0;
+    
+    background-color: white;
+}
+.navbar-nav li:hover .dropdown-menu {
+    display: block;
+}
+
+a:hover{
+    color: red;
+
+}
+.why-choose-us {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.why-choose-us-item {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us-item i {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.why-choose-us-item h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.why-choose-us-item p {
+  color: #666;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .why-choose-us {
+    flex-direction: column;
+  }
+
+  .why-choose-us-item {
+    flex-basis: auto;
+    margin-bottom: 20px;
+  }
+}
+.fresh-perspectives {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+
+.fresh-perspectives-text h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.fresh-perspectives-text p {
+  color: #666;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  .fresh-perspectives {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fresh-perspectives-text {
+    flex-basis: auto;
+    margin-bottom: 30px;
+  }
+
+  .fresh-perspectives-images {
+    flex-basis: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.m-auto{
+    padding-bottom: 30px;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .content-post h6{
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .content-post h3{
+    font-weight: bold;
+  }
+  .why-choose-us-item {
+  transition: transform 0.3s ease;
+}
+
+.why-choose-us-item:hover {
+  transform: scale(1.05);
+}
+
+</style>
+        
+    </head>
+    <body>
+        <!-- Header -->
+        <!-- <header class="header">
+            <nav id="headerMenu"></nav>
+            <div class="hero">
+                <img
+                    src="../IMG/TrangChinh/baner.jpg" style="width:100%; height: 700px"
+                    alt=""
+                    class="img-fluid hero-img"
+                />
+            </div>
+        </header> -->
+
+        <!-- Main -->
+        <header class="header">
+            <nav class="navbar navbar-expand-sm px-5 fixed-top pb-0">
+                <div class="container">
+                    <a href="./home.html">
+                        <img
+                            src="../IMG/Logo/Home & More.jpg" 
+                            alt=""
+                            class="logo-img"
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#idNav"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="idNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="../HTML/home.html" class="nav-link"
+                                    >GIỚI THIỆU</a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    href=""
+                                    class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    >DỊCH VỤ</a
+                                >
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="../HTML/baohanh.html" class="nav-link"
+                                            >BẢO HÀNH - SỬA CHỮA</a
+                                        >
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="../HTML/tuvan.html" class="nav-link"
+                                            >TƯ VẤN KHÁCH HÀNG</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    href=""
+                                    class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                >
+                                    SẢN PHẨM
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="../HTML/products.html" class="nav-link"
+                                            >MÁY GIẶT</a
+                                        >
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="../HTML/tulanh.html" class="nav-link"
+                                            >TỦ LẠNH</a
+                                        >
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="../HTML/giadung.html" class="nav-link"
+                                            >GIA DỤNG ĐIỆN</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    href=""
+                                    class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    >TIN TỨC</a
+                                >
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="../HTML/meovat.html" class="nav-link"
+                                            >MẸO VẶT CUỘC SỐNG</a
+                                        >
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="../HTML/xhuongtintuc.html" class="nav-link"
+                                            >XU HƯỚNG</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../HTML/lienhe.html" class="nav-link">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+                        <div class="input-group search">
+                            <span
+                                class="input-group-text bg-white border-black"
+                                style="
+                                    border-top-left-radius: 20px;
+                                    border-bottom-left-radius: 20px;
+                                    border-right: none;
+                                "
+                                ><img src="../IMG/Logo/Union.png" alt=""
+                            /></span>
+                            <input
+                                class="form-control border-black"
+                                type="text"
+                                name=""
+                                id=""
+                                style="
+                                    margin-right: 60px;
+                                    border-left: none;
+                                    border-top-right-radius: 20px;
+                                    border-bottom-right-radius: 20px;
+                                    outline: none;
+                                    box-shadow: none;
+                                "
+                                placeholder="Tìm kiếm..."
+                            />
+                        </div>
+                        <div class="header-action">
+                            <a href="./cart.html"
+                                ><img
+                                    src="../IMG/Logo/Logo-cart.png"
+                                    alt=""
+                                    class="cart-icon"
+                            /></a>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#formModal"
+                            ><img
+                                src="../IMG/Logo/logo-user.png"
+                                alt=""
+                                class="account-icon"
+                        /></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="modal fade modal-lg" id="formModal">
+                <div class="modal-dialog">
+                  <div class="modal-content bg-transparent border-0 ">
+                    <div class="modal-header border-0">
+                     
+                    </div>
+                    <div class="modal-body ">
+                      <div class="container-sign" id="container">
+                        <div class="form-container sign-up">
+                            <form >
+                                <h1>Tạo tài khoản</h1>
+                                <div class="social-icons">
+                                    <a href="#" class="icon"><img src="../IMG/Logo/icons8-google-30.png" alt=""></a>
+                                    <a href="#" class="icon"><img src="../IMG/Logo/icons8-facebook-30.png" alt=""></a>
+                                    <a href="#" class="icon"><img src="../IMG/Logo/icons8-github-30.png" alt=""></a>
+                                </div>
+                                <span>Hoặc sử dụng email của bạn để đăng ký</span>
+                                <input type="text" placeholder="Name">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button>Đăng kí</button>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in">
+                            <form >
+                                <h1>Đăng nhập</h1>
+                                <div class="social-icons">
+                                <a href="#" class="icon"><img src="../IMG/Logo/icons8-google-30.png" alt=""></a>
+                                <a href="#" class="icon"><img src="../IMG/Logo/icons8-facebook-30.png" alt=""></a>
+                                <a href="#" class="icon"><img src="../IMG/Logo/icons8-github-30.png" alt=""></a>
+                              
+                                </div>
+                                <span>Hoặc sử dụng mật khẩu email của bạn</span>
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <a href="#">Quên mật khẩu</a>
+                                <button>Đăng nhập</button>
+                            </form>
+                        </div>
+                        <div class="toggle-container">
+                            <div class="toggle">
+                                <div class="toggle-panel toggle-left">
+                                    <h1>Chào mừng bạn trở lại!</h1>
+                                    <p>Nhập thông tin cá nhân của bạn để sử dụng tất cả các tính năng của trang web</p>
+                                    <button class="hidden" id="login">Đăng nhập</button>
+                                </div>
+                                <div class="toggle-panel toggle-right">
+                                    <h1>Chào bạn!</h1>
+                                    <p>Đăng ký với thông tin cá nhân của bạn để sử dụng tất cả các tính năng của trang web</p>
+                                    <button class="hidden" id="register">Đăng ký</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                    </div>
+                  </div>
+                </div>
+            </div> 
+        </header>
+        <!-- điền vào đây -->
+<main>
+  <section style="margin-top: 80px;">
+
+    <div class="row" style="padding-top: 50px;">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="carousel slide" id="demo" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"
+                        aria-current="true"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="slide 1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="slide 2"></button>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="../IMG/Logo/slide1.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item"><img src="../IMG/Logo/slide22.jpg" class="d-block w-100" alt=""></div>
+                    <div class="carousel-item"><img src="../IMG/Logo/slide1.jpg" class="d-block w-100" alt=""></div>
+
+                </div>
+                <button class="carousel-control-prev  rounded-circle" type="button" data-bs-target="#demo"
+                    data-bs-slide="prev">
+                </button>
+                <button class="carousel-control-next  rounded-circle" type="button" data-bs-target="#demo"
+                    data-bs-slide="next">
+                </button>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+
+    <div class="row mt-5 align-center ">
+        <div class="col-1 "></div>
+        <div class="col  ">
+            <div class="row shadow p-3 mb-5 bg-body ">
+
+                <div class="col text-center border-end"><i class="fa-regular fa-solid fa-truck "></i>
+                    <h5>Free Shipping</h5>
+                    <p>Free shipping on all US order</p>
+                </div>
+                <div class="col text-center  border-end"> <i class="fa-sharp fa-solid fa-rotate"></i>
+                    <h5>Free Shipping</h5>
+                    <p>Free shipping on all US order</p>
+                </div>
+
+                <div class="col text-center  border-end"> <i class="fa-solid fa-headset"></i>
+                    <h5>24/7 Support</h5>
+                    <p>Free shipping on all order</p>
+                </div>
+                <div class="col text-center  "> <i class="fa-regular fa-solid fa-coins"></i>
+                    <h5>Secure Payment</h5>
+                    <p>Free Shipping on all order</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-1 "></div>
+
+    </div>
+
+
+    
+    <div class="row mt-5 ">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="carousel slide" id="demo1">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"
+                        aria-current="true"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="slide 1"></button>
+
+                </div>
+                <div class="carousel-inner mx-lg-3">
+                    <div class="carousel-item active ">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col text-center">
+                                <h1>HOME&MORE BLOG</h1>
+                                <p>Chăm sóc tổ ấm của bạn, tận hưởng từng khoảnh khắc bên gia đình.</p>
+                            </div>
+                            <div class="col-2"></div>
+
+                        </div>
+                        <div class="row  ">
+                            <div class="col">
+
+                                <div class="card">
+                                    <div class="card-info">
+                                        <div class="card-avatar">
+                                          <img
+                                                    src="../IMG/MAY GIAT/xh1.jpg"
+                                                    alt=""></a></div>
+                                        <div class="card-title">Mọi thứ bạn cần biết </div>
+                                        <div class="card-subtitle">Thiết bị gia đình không chỉ đơn thuần là những vật dụng phục vụ cuộc sống hàng ngày, mà còn là những người bạn đồng hành, mang đến những trải nghiệm mới lạ và tiện nghi. Cùng chúng tôi khám phá những góc nhìn đa dạng về thiết bị gia đình, để bạn có thể lựa chọn những sản phẩm phù hợp nhất với nhu cầu và phong cách sống của mình. </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col">
+
+                                <div class="card">
+                                    <div class="card-info">
+                                        <div class="card-avatar">
+                                          <img
+                                                    src="../IMG/MAY GIAT/xh2.jpg"
+                                                    alt=""></a></div>
+                                        <div class="card-title">Các sản phẩm hiện đại cho cuộc sống.</div>
+                                        <div class="card-subtitle">Trong thời đại công nghệ số phát triển mạnh mẽ, thiết bị gia đình cũng không ngừng đổi mới để đáp ứng những nhu cầu ngày càng cao của người tiêu dùng. Từ những chiếc tủ lạnh thông minh đến những chiếc máy hút bụi tự động, hãy cùng chúng tôi cập nhật những xu hướng mới nhất và khám phá những góc nhìn độc đáo về thiết bị gia đình. </div>
+                                    </div>
+                                   
+                                </div>
+
+
+
+                            </div>
+                            <div class="col">
+
+                                <div class="card">
+                                    <div class="card-info">
+                                        <div class="card-avatar">
+                                          <img
+                                                    src="../IMG/MAY GIAT/xh3.jpg"
+                                                    alt=""></a></div>
+                                        <div class="card-title">Những mẫu máy giặt hiện đại.</div>
+                                        <div class="card-subtitle">Những mẫu máy giặt hiện đại thường mang đến không gian sang trọng và tiện nghi, với thiết kế tối giản nhưng vẫn đầy đủ chức năng. Chất liệu chủ yếu là kính, inox và gỗ tự nhiên, tạo cảm giác ấm cúng nhưng vẫn tinh tế. Các thiết bị bếp được tích hợp công nghệ tiên tiến, như bếp điện từ, lò nướng âm tường và máy rửa chén thông minh. </div>
+                                    </div>
+                                   
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+
+                            <div class="col">
+
+                                <div class="card">
+                                    <div class="card-info">
+                                        <div class="card-avatar"><img
+                                                    src="../IMG/MAY GIAT/xh33.jpg"
+                                                    alt=""></a></div>
+                                        <div class="card-title">So sánh các loại tủ lạnh RO, Nano, UF</div>
+                                        <div class="card-subtitle">Tủ lạnh side-by-side lại mang đến không gian lưu trữ rộng rãi hơn, với ngăn đông và ngăn mát nằm cạnh nhau, thường đi kèm các tính năng hiện đại như máy làm đá và lọc nước, phù hợp cho những gia đình đông thành viên hoặc thường xuyên tích trữ thực phẩm. Mỗi loại tủ lạnh đều có ưu điểm riêng, tùy thuộc vào nhu cầu và không gian của người sử dụng.</div>
+                                    </div>
+                                   
+                                </div>
+
+
+
+                            </div>
+                            <div class="col">
+
+                                <div class="card">
+                                    <div class="card-info">
+                                        <div class="card-avatar"><img
+                                                    src="../IMG/MAY GIAT/xh22.jpg"
+                                                    alt=""></a></div>
+                                        <div class="card-title">Các sản phẩm thông minh</div>
+                                        <div class="card-subtitle">Với màn hình cảm ứng, khả năng theo dõi thực phẩm và thông báo khi nguyên liệu sắp hết, tủ lạnh thông minh giúp người dùng quản lý thực phẩm hiệu quả hơn. Những sản phẩm này không chỉ nâng cao chất lượng cuộc sống mà còn giúp tối ưu hóa thời gian và công sức trong các công việc hàng ngày. </div>
+                                    </div>
+                                  
+                                </div>
+
+
+
+                            </div>
+                            <div class="col">
+
+                                <div class="card">
+                                    <div class="card-info">
+                                        <div class="card-avatar"><img
+                                                    src="../IMG/MAY GIAT/xh11.jpg"
+                                                    alt=""></a></div>
+                                        <div class="card-title">Bạn có tò mò về những công nghệ ?</div>
+                                        <div class="card-subtitle">Bạn có tò mò về những công nghệ mới nhất có thể biến ngôi nhà của bạn thành một không gian sống thông minh và tiện nghi? Hãy cùng chúng tôi khám phá những góc nhìn bất ngờ về thiết bị gia đình, nơi bạn sẽ tìm thấy những giải pháp sáng tạo cho mọi vấn đềđể bạn có thể lựa chọn những sản phẩm thể hiện cá tính và phong cách riêng của mình.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>  
+                  </div>
+                <button class="carousel-control-prev bg-dark rounded-circle dk1" type="button"
+                    style="width: 50px; height: 50px; " data-bs-target="#demo1" data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+
+                </button>
+                <button class="carousel-control-next bg-dark rounded-circle dk2" style="width: 50px; height: 50px; "
+                    type="button" data-bs-target="#demo1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                    <!-- <span class="visually-hidden"></span> -->
+                </button>
+
+
+            </div>
+
+
+        </div>
+        <div class="col-1"></div>
+
+    </div>
+
+    <div class="row h-100 mt-5">
+        <div class="col-6 time ">
+            <div class="content-post" style="margin:50px ;">
+                <h3>Cơ Hội Săn Ngay Máy Giặt & Tủ Lạnh Với Giá Sốc &#10004; &#10004;</h3>
+                <h6 style="font-style: italic; color: red;"> Đừng bỏ lỡ cơ hội trang bị cho gia đình những thiết bị tiện nghi nhất với chương trình giảm giá đặc biệt lên đến 20% dành cho các dòng máy giặt và tủ lạnh hiện đại!</h6>
+                <p>Chúng tôi mang đến cho bạn những sản phẩm từ các thương hiệu uy tín với công nghệ tiên tiến: 
+                    giặt hơi nước khử khuẩn, tủ lạnh Inverter tiết kiệm điện và nhiều tính năng thông minh khác, 
+                    giúp cuộc sống gia đình trở nên dễ dàng và thoải mái hơn. Số lượng có hạn, hãy nhanh tay chọn 
+                    ngay cho mình sản phẩm yêu thích để vừa tiết kiệm, vừa tận hưởng chất lượng đỉnh cao. 
+                    </p>
+                    <h6>Đặt hàng ngay hôm nay để được giao hàng miễn phí và bảo hành chính hãng!</h6>
+                        <a href="#"><button class="btn btn-dark btn-theme p-1">
+                            XEM THÊM
+                            <span class="fas fa-arrow-right"></span>
+                        </button></a>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <div class="carousel slide" id="demo3" data-bs-ride="carousel">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <div class="card m-auto pt-1 " style="width: 70%;height: 400px; position: relative;">
+                            <span style="position: absolute; background-color: red; color: white; right: 0px; top: 0px; font-size: 20px; border-radius: 5px 5px 5px 5px ;" >-20%</span>
+                            <img src="../IMG/MAY GIAT/detail2.jpg"
+                                class="card-img-top  m-auto" style="height: 75%;width: 65%;" alt="">
+                            <div class="card-body text-center">
+                                <span style="color: red;">3,063,200<sup>đ</sup></span><span class="p-4"><del>3,829,000 <sup>đ</sup></del></span>
+                                <h1 class="card-title">Máy giặt LG</h1>
+                                <a href="../HTML/Cart.html"><span><i class="fa-solid fa-cart-shopping m-3"></i></span></a>
+                                <span><i class="fa-solid fa-heart m-3"></i> </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card m-auto pt-1 " style="width: 70%;height: 400px; position: relative;">
+                            <span style="position: absolute; background-color: red; color: white; right: 0px; top: 0px; font-size: 20px; border-radius: 5px 5px 5px 5px ;" >-20%</span>
+                            <img src="../IMG/TU LANH/pnsn11.jpg"
+                                class="card-img-top m-auto"style="height: 75%;width: 65%;"  alt="">
+                            <div class="card-body text-center">
+                                <span style="color: red;">3,167,200</span><sup>đ</sup></span><span class="p-4"><del>3,959,000<sup>đ</sup></del></span>
+                                <h1 class="card-title">Tủ lạnh Panasonic</h1>
+                                <a href="../HTML/Cart.html"><span><i class="fa-solid fa-cart-shopping m-3"></i></span></a>
+                              <span><i class="fa-solid fa-heart m-3"></i> </span></a>
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card m-auto pt-1 " style="width: 70%;height: 400px; position: relative;">
+                            <span style="position: absolute; background-color: red; color: white; right: 0px; top: 0px; font-size: 20px; border-radius: 5px 5px 5px 5px ;" >-20%</span>
+                            <img src="../IMG/GIA DUNG DIEN/Thiết kế chưa có tên.png"
+                                class="card-img-top  m-auto" style="height: 75%;width: 75%;"  alt="">
+                            <div class="card-body text-center">
+                                <span style="color: red;">2,815,200<sup>đ</sup></span><span class="p-4"><del>3,519,000 <sup>đ</sup></del></span>
+                                <h1 class="card-title">Máy xay sinh tố</h1>
+                                <a href="../HTML/Cart.html"><span><i class="fa-solid fa-cart-shopping m-3"></i></span></a>
+                                <span><i class="fa-solid fa-heart m-3"></i> </span></a>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev bg-dark rounded-circle" type="button"
+                    style="width: 50px; height: 50px; margin: auto;" data-bs-target="#demo3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next bg-dark rounded-circle"
+                    style="width: 50px; height: 50px; margin: auto;" type="button" data-bs-target="#demo3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-1"></div>
+            <div class="col" >
+                <div class="row w-100 m-auto">
+                    <div class="col a1  "><img src="../IMG/1.png.webp" alt="">
+                    </div>
+                    <div class="col a1 "><img src="../IMG/Logo/1.png.webp" alt=""></div>
+                    <div class="col a1"><img src="../IMG/Logo/2.png.webp" alt=""></div>
+                    <div class="col a1"><img src="../IMG/Logo/4.png.webp" alt=""></div>
+                    <div class="col a1"><img src="../IMG/Logo/5.png.webp" alt=""></div>
+                </div>
+                <div class="col-1"></div>
+
+
+            </div>
+        </div>
+        <div class="why-choose-us" style="background-color: #333; padding: 50px;">
+          <div class="why-choose-us-item " >
+            <i class="fas fa-shopping-cart "></i>
+            <h3>Mẫu mã đa dạng, độc đáo</h3>
+            <p>Những sản phẩm của chúng tôi không chỉ là sự kết hợp hoàn hảo giữa chức năng và thiết kế mỹ thuật, mà còn mang lại cá nhân và độc nhất vô nhị.</p>
+          </div>
+          <div class="why-choose-us-item">
+            <i class="fas fa-truck"></i>
+            <h3>Chất lượng vượt trội</h3>
+            <p>Để đảm bảo chất lượng sản phẩm, chúng tôi sử dụng nguyên vật liệu cao cấp và áp dụng quy trình sản xuất chặt chẽ. Điều này đảm bảo rằng khách hàng sẽ có những sản phẩm chất lượng cao, bền đẹp và đáng tin cậy.</p>
+          </div>
+          <div class="why-choose-us-item">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Chăm sóc khách hàng tận tâm</h3>
+            <p>Đội ngũ nhân viên am hiểu sản phẩm, sẵn lòng lắng nghe và tư vấn khách hàng trong từng quyết định. Chúng tôi đảm bảo khách hàng sẽ có trải nghiệm mua hàng đẳng cấp, thoải mái và hài lòng.</p>
+          </div>
+        </div>
+        </div>
+</section>
+  </main>
+        <footer id="footerMenu">
+        </footer>
+        <!-- Modal lien he -->
+        <div id="myModal" class="modal fade modal-lg" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <div class="text-center w-100"> <h2 class="modal-title text-center">ĐẶT LỊCH HẸN</h2></div>
+                        <button
+                                type="button"
+                                class="close"
+                                data-bs-dismiss="modal"
+                            >
+                                &times;
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                       
+                         <form action="" class="table" >
+                      <div class="row">
+                        <div class="col">
+                            <label for="">Họ và tên: </label>
+                        </div>
+                        <div class="col">
+                            <label for="">Email: </label>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Nhập họ và tên"
+                                class="form-control"
+                                style="outline: none; box-shadow: none;"
+                            
+                            />
+                        </div>
+                        <div class="col">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Nhập địa chỉ Email"
+                                class="form-control"
+                                style="outline: none; box-shadow: none;"
+                            />
+                        </div>
+                    </div>
+                    <div class="row mt-2"><label for="">Điện thoại: </label></div>
+                    <div class="row mx-0 mt-2">
+                        <input
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Nhập số điện thoại: "
+                            class="form-control"
+                            style="   outline: none;box-shadow: none;"
+                        />
+                    </div>
+                    <div class="row mt-2"><label for="">Nội dung: </label></div>
+                    <div class="row mx-0 mt-2">
+                        <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="10"
+                            placeholder="Nội dung liên hệ"
+                            class="form-control"
+                            style="   outline: none;box-shadow: none;"
+                        ></textarea>
+                    </div>
+                    <div class="row m-0 mt-4">
+                            <button class="btn btn-dark">GỬI LIÊN HỆ</button></a
+                        >
+                    </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="../JS/TONGHOPTRANG/HeaderFooter.js"></script>
+        <script src="../JS/formdangki.js"></script>
+    </body>
+</html>
+
+
+

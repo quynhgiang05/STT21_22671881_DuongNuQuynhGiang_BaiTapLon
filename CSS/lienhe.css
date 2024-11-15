@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+.main-content {
+   margin-top: 150px;
+   margin-bottom: 90px ;
+}
+.desc {
+    color: #787878;
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+.contact-right label {
+    font-weight: 600;
+}
+.contact-right .form-control{
+    background-color: #f9f9f9;
+    border: none;
+    border-bottom: 1px solid black;
+    min-height: 40px;
+    padding: 10px 15px;
+    border-radius: 1px;
+    font-size: 15px;
+    opacity: 0.8;
+   
+}
+.contact-right .btn {
+    border-radius: 1px;
+    padding: 10px 0px;
+}
+.contact-box .box-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.contact-box .box-info .contact-icon{
+    width: 50px;
+    height: 50px;
+}
+.contact-box .box-info span {
+    color: #787878;
+}
+.contact-box .box-info strong {
+    display: block;
+    font-weight: 700;
+    color: #000;
+}
+.contact-map {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+.contact-thumb {
+    overflow: hidden;
+}
+.contact-thumb:hover .contact-map {
+    transform: scale(1.8);
+    cursor: pointer;
+}
+@media(max-width:756px) {
+    .contact-title {
+        margin-top: 30px;
+    }
+}

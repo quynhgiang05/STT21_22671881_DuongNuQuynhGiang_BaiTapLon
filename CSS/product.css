@@ -1,0 +1,180 @@
+/* 
+    Author: The Bao
+    Day: 22/03/2024
+*/
+* {
+    margin-top: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    height: 80px;
+}
+
+.container-fluid {
+    margin-top: 28px;
+}
+
+.body-pets {
+    margin-bottom: 10px; 
+}
+
+/* Khung các loại pet (bên phải) */
+.menu-right .menu-choose {
+    width: 100%;
+    height: 80px;
+
+    background-color: #464646;
+}
+
+.menu-choose {
+    display: flex;
+    align-items: center;
+}
+
+.menu-choose ul {
+    margin-bottom: 0;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-choose li {
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+}
+
+.menu-choose button {
+    width: 100px;
+}
+
+/* Nút sắp xếp giá pets */
+.chooseCost:hover {
+    cursor: pointer;
+    outline: none; /* tắt hiển thị viền ngoài khi select đang được focus */
+    box-shadow: none; /* tắt hiệu ứng box-shadow khi select đang được focus */
+  }
+
+.form-select option[disabled] {
+    color: transparent;
+  }
+
+  /* Nút chuyển các trang danh sách pets */ 
+  .transformPagePets {
+    padding-left: 200px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Khung hiện sản phẩm */
+.productsView {
+    height: 530px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.productsView .row {
+    margin-left: 1px;
+}
+
+.productsView .row .frameImg {
+    display: flex; 
+    justify-content: center;
+}
+
+.productsView .row img {
+    margin-top: 4px;
+    height: 130px;
+    transition: transform 0.3s ease;
+}
+
+.productsView .row img:hover {
+    transform: scale(1.2);
+}
+
+.productsView h6 {
+    font-size: 12px;
+    height: 50px;
+}
+
+.productsView h5 {
+    margin-top: 34px;
+    text-align: center;
+}
+
+.productsView .row button {
+    font-size: 14px;
+    width: 160px;
+    height: 32px;
+}
+
+/* khi hover vào thì nút button di chuyển lên trên và giá tiền di chuyển xuống dưới sau đó giá tiền ẩn đi và button hiện lên */
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .price {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .themGioHang {
+    position: absolute;
+    bottom: -60px; /* Ẩn nút khi không hover */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .thumbnail:hover .price {
+    transform: translateY(30px); /* Di chuyển giá tiền xuống */
+    opacity: 0; /* Ẩn giá tiền */
+  }
+  
+  .thumbnail:hover .themGioHang {
+    bottom: 10px; /* Hiện nút khi hover */
+  }
+
+.transformPage {
+    height: 50px;
+    width: 100%;
+}
+  /* Dãy số trang */
+  .transformPage {
+    height: 50px;
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .transformPage ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+  
+  .numPage {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: 26px;
+  }
+  

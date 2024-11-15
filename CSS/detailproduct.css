@@ -1,0 +1,124 @@
+.container-fluid {
+    margin-top: 100px;
+    height: 600px;
+}
+
+.connect-page {
+    margin-top: 20px;
+}
+
+.connect-page a {
+    text-decoration: none;
+    opacity: 0.7;
+    color: black;
+}
+
+.productsView img {
+    width: 600px;
+    height: 400px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+}
+
+.productInfo {
+    margin-top: 34px;
+    margin-left: 50px;
+}
+
+/* Tên sản phẩm */
+
+.productsName {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Thương hiệu */
+.brand {
+    font-size: 20px;
+}
+
+.brand label {
+    font-weight: bold;
+}
+
+/* Số sao */
+
+.fa {
+    color: gold;
+}
+
+/* Tình trạng */
+.state-contain {
+    font-size: 20px;
+}
+
+.state {
+    color: green;
+    font-weight: bold;
+}
+
+/* Giá bán */
+.price label {
+    margin-top: 8px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+/* Trọng lượng */
+.border-top {
+    font-size: 20px;
+}
+
+.weight-product {
+    display: flex;
+    flex-direction: row;
+}
+
+.weight-product div {
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Số lượng */
+.amount-contain {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.amountCo {
+    height: 30px;
+    width: 140px;
+    margin-left: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.amountCo input {
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    border: none;
+}
+
+.amountCo img {
+    width: 20px;
+    height: 20px;
+}
+
+.amountCo img {
+    cursor: pointer;
+}
