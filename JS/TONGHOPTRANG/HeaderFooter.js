@@ -329,12 +329,16 @@ function renderFooter() {
                     <div class="col footer-col">
                         <a href="../HTML/home.html">
                             <img
-                                src="../Images/Logo/Logo.png"
+                                src="../IMG/Logo/Home &amp; More.jpg"
                                 alt=""
                                 class="logo"
+                                width= "100px"
+                                height= "100px"
+                                style="border-radius: 5px"
                             />
-                            <span class="logo-title">HOME&MORE </span>
+                            
                         </a>
+                        <figcaption class="fw-bold" style="color:white; padding-top: 15px; font-size: 16px">HOME&MORE </figcaption>
                     </div>
                     <div class="col footer-col">
                         <h3 class="footer-title" onclick="toggleFooterList(this)">CHÍNH SÁCH DỊCH VỤ <span class="toggle-icon">+</span></h3>

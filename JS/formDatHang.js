@@ -1,11 +1,11 @@
 $(document).ready(function() {
     var name = localStorage.getItem('name');
-    var img = localStorage.getItem('img');
+    // var img = localStorage.getItem('img');
     var price = localStorage.getItem('price');
     var amount = localStorage.getItem('amount');
 
     $('#name').text(name);
-    $('#img').attr('src', img);
+    // $('#img').attr('src', img);
     $('#price').text(price);
     $('#amount').text(amount);
 
